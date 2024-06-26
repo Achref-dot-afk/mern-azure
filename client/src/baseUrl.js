@@ -1,3 +1,3 @@
-const baseUrl = "test-app55.azurewebsites.net";
+const baseUrl = "test-app255.azurewebsites.net";
 
 export default baseUrl;
