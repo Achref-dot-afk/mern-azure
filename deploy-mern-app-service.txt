@@ -1,0 +1,10 @@
+To deploy mern stack webapp on azure app service you to ensure that you have these lines in your src code :
+
+app.use(express.static('../frontend'));
+app.get("*",(req,res)=>{
+    res.sendFile(path.resolve(_dirname,"frontend","index.html"))
+}
+
+and modify the api url from localhost to the app service url
+and run npm run build to generate react static content 
+and don't forget to add environment variables you used in the app(db_connection,etc...)
